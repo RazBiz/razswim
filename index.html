@@ -100,6 +100,30 @@
         .experience {
             margin-bottom: 20px; /* Adjust the margin as needed */
         }
+
+        .download-resume {
+          display: block;
+          text-align: center;
+          margin-top: 40px; /* Increase the margin to add more space under the button */
+          margin-bottom: 40px; /* Add some space below the button */
+        }
+
+        .download-resume a {
+          padding: 10px 20px;
+          background-color: #fff;
+          color: #111;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          display: inline-block; /* Add this to ensure the margin is applied correctly */
+          transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Add transitions for smooth effects */
+        }
+
+        .download-resume a:hover {
+          background-color: #111; /* Change background color on hover */
+          color: #fff; /* Change text color on hover */
+          transform: scale(1.2); /* Scale the button when hovering */
+        }
     </style>
 </head>
 
@@ -191,20 +215,14 @@
             • Received varsity letter awards for swimming from the year 2004 to 2008, D. S. Senanayake College.<br>
         </p>
 
-
-        <button onclick="downloadResume()">Download Resume</button>
+        <div class="download-resume">
+        <a href="resume/Razeen_Resume.pdf" download>Download Resume</a>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Razeen M. All rights reserved.</p>
     </footer>
-
-    <script>
-        function downloadResume() {
-            // Replace the link with the actual path to your resume
-            window.location.href = '/resume/Razeen_Resume.pdf';
-        }
-    </script>
 
 </body>
 
